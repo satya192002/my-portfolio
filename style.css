@@ -6,40 +6,4 @@ main{min-height:75vh}.hero{padding:78px 0 45px}.eyebrow{color:var(--cyan);font-s
 @media(max-width:760px){.menu{display:block}.links{display:none;position:absolute;top:76px;left:0;right:0;background:#0c1627;padding:18px 22px;flex-direction:column;border-bottom:1px solid var(--line)}.links.open{display:flex}.profile{grid-template-columns:1fr}.photo{max-width:230px}.cards{grid-template-columns:1fr}.hero{padding-top:58px}}
 
 
-/* ===== FIXED PROFILE PHOTO ===== */
-
-#profile-photo-frame {
-    width: 280px;
-    height: 340px;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 16px;
-    background: #1a2940;
-}
-
-#profile-photo {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 25%;
-    border-radius: 16px;
-}
-
-/* ===== MOBILE RESPONSIVE FIX ===== */
-
-@media screen and (max-width: 768px) {
-
-    .panel:has(#profile-photo-frame) {
-        grid-template-columns: minmax(0, 1fr) !important;
-        justify-items: center;
-        gap: 25px;
-    }
-
-    #profile-photo-frame {
-        width: 240px;
-        height: 290px;
-        margin: 0 auto;
-    }
-}
 
